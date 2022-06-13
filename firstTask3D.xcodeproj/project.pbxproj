@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		800F7D08285747170099DC1F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 800F7D07285747170099DC1F /* main.cpp */; };
+		800F7D1028574A0D0099DC1F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800F7D0F28574A0D0099DC1F /* OpenGL.framework */; };
+		800F7D1228574A270099DC1F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800F7D1128574A270099DC1F /* GLUT.framework */; };
+		800F7D1828574C800099DC1F /* Spring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 800F7D1628574C800099DC1F /* Spring.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,10 @@
 /* Begin PBXFileReference section */
 		800F7D04285747170099DC1F /* firstTask3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = firstTask3D; sourceTree = BUILT_PRODUCTS_DIR; };
 		800F7D07285747170099DC1F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		800F7D0F28574A0D0099DC1F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		800F7D1128574A270099DC1F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		800F7D1628574C800099DC1F /* Spring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spring.cpp; sourceTree = "<group>"; };
+		800F7D1728574C800099DC1F /* Spring.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Spring.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800F7D1228574A270099DC1F /* GLUT.framework in Frameworks */,
+				800F7D1028574A0D0099DC1F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +52,7 @@
 			children = (
 				800F7D06285747170099DC1F /* firstTask3D */,
 				800F7D05285747170099DC1F /* Products */,
+				800F7D0E28574A0D0099DC1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +68,19 @@
 			isa = PBXGroup;
 			children = (
 				800F7D07285747170099DC1F /* main.cpp */,
+				800F7D1628574C800099DC1F /* Spring.cpp */,
+				800F7D1728574C800099DC1F /* Spring.hpp */,
 			);
 			path = firstTask3D;
+			sourceTree = "<group>";
+		};
+		800F7D0E28574A0D0099DC1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800F7D1128574A270099DC1F /* GLUT.framework */,
+				800F7D0F28574A0D0099DC1F /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800F7D1828574C800099DC1F /* Spring.cpp in Sources */,
 				800F7D08285747170099DC1F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +265,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RHMKD77C8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-terror.firstTask3D";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +276,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RHMKD77C8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-terror.firstTask3D";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
